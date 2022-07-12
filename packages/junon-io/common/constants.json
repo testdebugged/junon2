@@ -3560,6 +3560,32 @@
       },
       "description": "Basic Melee weapon. Damage 7"
     },
+    "HolySword": {
+      "parent": "Equipments.MeleeEquipment",
+      "isWeapon": true,
+      "cost": {
+        "gold": 1000
+      },
+      "categories": {"melee_damage": true},
+      "isAnimatable": true,
+      "sprite": {
+        "position": {
+          "x": 50,
+          "y": 20
+        },
+        "anchor": 0,
+        "rotation": 90
+      },
+      "stats": {
+        "damage": 30,
+        "range": 55,
+        "meleeRange": 55
+      },
+      "requirements": {
+        "IronOre": 10
+      },
+      "description": "Strong Holy Weapon. Damage 30"
+    },
     "AssassinsKnife": {
       "parent": "Equipments.MeleeEquipment",
       "isWeapon": true,

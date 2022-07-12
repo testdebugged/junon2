@@ -36,6 +36,7 @@ Equipments.Radio = require("./hand/radio")
 Equipments.AssassinsKnife = require("./hand/assassins_knife")
 Equipments.PocketTrader = require("./hand/pocket_trader")
 Equipments.Bowl = require("./hand/bowl")
+Equipments.HolySword = require("./hand/holy_sword")
 
 Equipments.SpaceSuit = require("./armor/space_suit")
 Equipments.CombatArmor = require("./armor/combat_armor")
