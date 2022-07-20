@@ -8,7 +8,7 @@ const Buildings = require("../entities/buildings/index")
 class Fill extends BaseCommand {
   getUsage() {
     return [
-      "/fill [start_row] [start_col] [end_row] [end_col] [terrain_type]"
+      "/fill [start_row] [start_col] [end_row] [end_col] [building_type]"
     ]
   }
   
@@ -44,7 +44,7 @@ class Fill extends BaseCommand {
     }
 
     if (!type) {
-      player.showChatError("Must specify terrain type")
+      player.showChatError("Must specify building type")
       return
     }
 
@@ -63,8 +63,18 @@ class Fill extends BaseCommand {
         isPlatform = true
 
       } else {
-        player.showChatError("Invalid terrain type")
+
+        if (buildingklass && Helper.createDynamicKlass("Walls"))
+        {
+        klass = buildingklass
+        isPlatform = false
+        }
+
+        else {
+        
+          player.showChatError("Invalid building type")
         return
+        }
       }
     }
 

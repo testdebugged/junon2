@@ -4,6 +4,10 @@ const BaseBuilding = require("./base_building")
 
 class Terminal extends BaseBuilding {
 
+  hasCustomColors() {
+    return true
+  }
+
   interact(user, action, content) {
     if (action === 'chat') {
       if (user.isPlayer()) {

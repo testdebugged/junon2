@@ -3738,6 +3738,28 @@
         "SpaceSuit": 1
       },
       "description": "Good for melee combat. Reduces damage by 4."
+
+    },
+    "CowboyHat": {
+      "parent": "Equipments.BaseEquipment",
+      "width": 64,
+      "height": 64,
+      "lightColor": "#ffffff",
+      "isLightPersistent": true,
+      "isCostIndependent": true,
+      "brightness": 0.8,
+      "cost": {
+        "gold": 125
+      },
+      "stats": {
+        "range": 64
+      },
+      "requirements": {
+        "Wood": 10,
+        "PlantFiber": 20
+      },
+      "description": "Fancy hat to suit your trader aspects"
+      
     },
     "PrisonerSuit": {
       "parent": "Equipments.BaseEquipment",

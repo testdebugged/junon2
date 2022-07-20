@@ -127,7 +127,7 @@ Buildings.CoffeeSeed = require("./crops/coffee_seed")
 
 Buildings.Fighter = require("./units/fighter")
 
-let disabledTypes = [0,1,3,4,5,7,8,10,11,12,13,14,15,21]
+let disabledTypes = []
 let disabledTypeSet = new Set()
 disabledTypes.forEach((id) => { disabledTypeSet.add(id) })
 

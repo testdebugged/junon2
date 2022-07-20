@@ -11,6 +11,10 @@ class TimerBomb extends BaseBuilding {
     this.container.addProcessor(this)
   }
 
+  hasCustomColors() {
+    return true
+  }
+
   remove() {
     super.remove() 
     this.container.removeProcessor(this)

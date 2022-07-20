@@ -40,6 +40,14 @@ Mobs.DummyPlayer = require("./dummy_player")
 
 // flying 
 Mobs.Drone = require("./drone")
+// abandoned
+Mobs.Transporter = require("./transporter")
+Mobs.Reaver = require("./reaver")
+Mobs.LandMob = require("./land_mob")
+Mobs.HoverMob = require("./hover_mob")
+Mobs.Catapult = require("./catapult")
+Mobs.FirstBot = require("./robots/first_bot")
+
 
 Mobs.forType = (type) => {
   const klassName = Helper.getMobNameById(type)

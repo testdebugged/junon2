@@ -3,6 +3,10 @@ const Protocol = require('../../../common/util/protocol')
 const BaseBuilding = require("./base_building")
 
 class Ventilator extends BaseBuilding {
+  
+  hasCustomColors() {
+    return true
+  }
 
   static isPositionValid(container, x, y, w, h, angle, player) {
     let armorHits = container.armorMap.hitTestTile(this.prototype.getBox(x, y, w, h))

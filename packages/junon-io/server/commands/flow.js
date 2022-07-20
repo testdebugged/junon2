@@ -27,7 +27,7 @@ class Flow extends BaseCommand {
   }
 
   isEnabled() {
-    return false
+    return true
   }
 
 }

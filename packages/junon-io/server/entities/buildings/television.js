@@ -12,6 +12,10 @@ class Television extends BaseBuilding {
     return Protocol.definition().BuildingType.Television
   }
 
+  hasCustomColors() {
+    return true
+  }
+
 }
 
 module.exports = Television
