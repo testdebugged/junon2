@@ -45,6 +45,7 @@ Equipments.PrisonerSuit = require("./armor/prisoner_suit")
 Equipments.PoliceSuit = require("./armor/police_suit")
 Equipments.LabCoat = require("./armor/lab_coat")
 Equipments.CultistSuit = require("./armor/cultist_suit")
+Equipments.CowboyHat = require("./armor/cowboy_hat")
 
 Equipments.forType = (type) => {
   const klassName = Helper.getTypeNameById(type)
