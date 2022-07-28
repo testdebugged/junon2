@@ -3616,6 +3616,39 @@
       },
       "description": "Can slice through 3 enemies at a time. Damage 10."
     },
+      "HolySword": {
+        "parent": "Equipments.MeleeEquipment",
+        "isWeapon": true,
+        "cost": {
+          "gold": 5000
+        },
+        "categories": {"melee_damage": true},
+        "isAnimatable": true,
+        "concurrentTargetCount": 10,
+        "sprite": {
+          "position": {
+            "x": 60,
+            "y": 20
+          },
+          "anchor": 0,
+          "rotation": 180
+        },
+        "stats": {
+          "damage": 35,
+          "range": 65,
+          "meleeRange": 65
+          
+        },
+        "requirements": {
+          "IronOre": 10,
+          "SquidLordHeart": 1,
+          "Meteorite": 2,
+          "Gel": 10
+        
+        },
+        "description": "Strong Holy Weapon, the ultimate mob slayer. Damage 35"
+       
+    },
     "BlueEnergySword": {
       "parent": "Equipments.MeleeEquipment",
       "isWeapon": true,
@@ -3742,8 +3775,8 @@
     },
     "CowboyHat": {
       "parent": "Equipments.BaseEquipment",
-      "width": 64,
-      "height": 64,
+      "width": 50,
+      "height": 40,
       "lightColor": "#ffffff",
       "isLightPersistent": true,
       "isCostIndependent": true,

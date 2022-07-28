@@ -12,9 +12,7 @@ class CowboyHat extends ArmorEquipment {
     return "Equipments.CowboyHat"
   }
 
-  getSpritePath() {
-    return 'cowboy_hat.png'
-  }
+ 
   
 }
 
