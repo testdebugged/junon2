@@ -1,11 +1,11 @@
 const HandEquipment = require("./hand_equipment")
-const Projectiles = require("./../../projectiles/index")
+const Projectiles = require("../../projectiles/index")
 
 const Protocol = require('../../../../common/util/protocol')
-const Constants = require("./../../../../common/constants.json")
+const Constants = require("../../../../common/constants.json")
 
 
-class AssaultRifle extends HandEquipment {
+class SlimyScepter extends HandEquipment {
 
   onEquipmentConstructed() {
     this.MAX_BURST_COUNT = 7
@@ -19,6 +19,7 @@ class AssaultRifle extends HandEquipment {
   use(user, targetEntity) {
     if (this.isProcessing) return false
     
+
     super.use(user, targetEntity)
 
     this.targetUser = user
@@ -28,18 +29,18 @@ class AssaultRifle extends HandEquipment {
     return true
   }
 
- 
-
- 
   
 
+ 
+
   getConstantsTable() {
-    return "Equipments.AssaultRifle"
+    return "Equipments.SlimyScepter"
   }
 
+  
 
   getType() {
-    return Protocol.definition().BuildingType.AssaultRifle
+    return Protocol.definition().BuildingType.SlimyScepter
   }
 
   executeTurn() {
@@ -58,7 +59,7 @@ class AssaultRifle extends HandEquipment {
     let angleRandomizer = 2 - Math.floor(Math.random() * 5)
     angleInRad = angleInRad + (angleRandomizer * Math.PI / 180)
 
-    new Projectiles.RifleBullet({
+    new Projectiles.SlimyBubble({
       weapon:        this,
       source:      { x: user.getX(),         y: user.getY() },
       destination: user.getShootTarget(this, angleInRad)
@@ -86,4 +87,4 @@ class AssaultRifle extends HandEquipment {
   }
 }
 
-module.exports = AssaultRifle
+module.exports = SlimyScepter

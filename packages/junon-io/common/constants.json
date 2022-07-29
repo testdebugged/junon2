@@ -1832,6 +1832,11 @@
       "height": 32,
       "speed": 12
     },
+    "SlimyBubble": {
+      "width": 32,
+      "height": 32,
+      "speed": 50
+    },
     "BlasterLaser": {
       "width": 24,
       "height": 8,
@@ -3355,6 +3360,34 @@
       },
       "description": "Shoots 5 beams of charged energy"
     },
+      "SlimyScepter": {
+        "parent": "Equipments.BaseEquipment",
+        "isWeapon": true,
+        "isFireArm": true,
+        "cost": {
+          "gold": 1500
+        },
+        "sprite": {
+          "position": {
+            "x": 70,
+            "y": -60
+          },
+          "anchor": 0,
+          "rotation": 90
+        },
+        "stats": {
+          "range": 800,
+          "damage": 3,
+          "health": 250,
+          "reload": 800
+        },
+        "requirements": {
+        
+          "Meteorite": 5,
+          "Gel": 1000
+        },
+        "description": "Forged from 1000 slimes. Shoots 7 bursts of charged energy."
+    },
     "MolotovCocktail": {
       "parent": "Equipments.MeleeEquipment",
       "isWeapon": true,
@@ -3393,6 +3426,7 @@
         "IronBar": 5
       },
       "description": "Throwable item that creates explosive damage"
+      
     },
     "PoisonGrenade": {
       "parent": "Equipments.MeleeEquipment",
@@ -3631,7 +3665,7 @@
             "y": 20
           },
           "anchor": 0,
-          "rotation": 180
+          "rotation": 90
         },
         "stats": {
           "damage": 35,

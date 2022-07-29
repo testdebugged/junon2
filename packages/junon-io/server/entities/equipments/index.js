@@ -38,6 +38,8 @@ Equipments.Scar17 = require("./hand/scar_17")
 Equipments.Bowl = require("./hand/bowl")
 Equipments.HolySword = require("./hand/holy_sword")
 
+Equipments.SlimyScepter = require("./hand/slimy_scepter")
+
 Equipments.SpaceSuit = require("./armor/space_suit")
 Equipments.CombatArmor = require("./armor/combat_armor")
 Equipments.SantaHat = require("./armor/santa_hat")
